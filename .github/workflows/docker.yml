@@ -15,6 +15,7 @@ permissions:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: zekty/dzgc-leave-system
+  TZ: Asia/Shanghai
 
 jobs:
   docker:

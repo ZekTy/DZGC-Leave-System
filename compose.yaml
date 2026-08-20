@@ -8,6 +8,7 @@ services:
     environment:
       PORT: "8123"
       HOST: 0.0.0.0
+      TZ: Asia/Shanghai
       LEAVE_SYSTEM_ROOT: /app
       LEAVE_SYSTEM_TARGET: http://esp.qmxy.com
     ports:

@@ -5,7 +5,8 @@ WORKDIR /app
 ENV NODE_ENV=production \
     LEAVE_SYSTEM_ROOT=/app \
     PORT=8123 \
-    HOST=0.0.0.0
+    HOST=0.0.0.0 \
+    TZ=Asia/Shanghai
 
 # This project has no npm dependencies. Copy only the files needed at runtime.
 COPY --chown=node:node package.json ./
