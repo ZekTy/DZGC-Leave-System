@@ -1,0 +1,9 @@
+# Runtime data must remain on the deployment host and outside Git/GHCR images.
+data/
+
+# Local output and editor files.
+*.log
+node_modules/
+.vscode/
+.idea/
+.DS_Store

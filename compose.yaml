@@ -1,0 +1,16 @@
+name: leave-system
+
+services:
+  leave-system:
+    container_name: leave-system
+    image: ghcr.io/zekty/dzgc-leave-system:latest
+    restart: unless-stopped
+    environment:
+      PORT: "8123"
+      HOST: 0.0.0.0
+      LEAVE_SYSTEM_ROOT: /app
+      LEAVE_SYSTEM_TARGET: http://esp.qmxy.com
+    ports:
+      - "127.0.0.1:8123:8123"
+    volumes:
+      - /opt/leave-system-data:/app/data

@@ -1,0 +1,13 @@
+{
+  "name": "leave-system-live-copy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve-live-copy.mjs",
+    "generate": "node scripts/generate-live-copy.mjs && node scripts/generate-copy.mjs",
+    "test": "node scripts/test-local-backend.mjs && node scripts/test-deployment-package.mjs",
+    "test:live": "node scripts/test-live-api-utf8.mjs",
+    "verify": "node scripts/verify-live-copy.mjs && node scripts/verify-copy.mjs"
+  }
+}
